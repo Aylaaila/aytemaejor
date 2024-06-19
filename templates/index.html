@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Main Page</title>
+</head>
+<body>
+	<h1>Fill in the questions below</h1>
+	<form method="POST" action="{{url_for('input')}}">
+		<div>
+			<label>What is your Firstname? </label>
+			<input type="text" name="fname" placeholder="Input Firstname" required><br>
+		</div>
+		<br>
+		<div>
+			<labe>What is your Lastname? </label>
+			<input type="text" name="lname" placeholder="Input lastname" required>
+		</div>
+		<br>
+		<div>
+			<label>How old are you? </label>
+			<input type="text" name="age" placeholder="Input Age" required>
+		</div>
+
+			<input type="submit">
+	</form>
+</body>
+</html>

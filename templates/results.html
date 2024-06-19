@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>RECORDS</title>
+</head>
+<body>
+    <button><b><a href="{{url_for('main')}}">Back To Main Page</a></b></button>
+	<h1>DATA RECORDS</h1>
+	<table>
+		<thead>
+			    <th>Firstname</th>
+			    <th>Lastname</th>
+			    <th>Age</th>
+				<th>Edit</th>
+				<th>delete</th>
+		</thead>
+		<tbody>
+			{% for dis in data %}
+			<tr>
+				<td>{{dis["firstname"]}}</td>
+				<td>{{dis["lastname"]}}</td>
+				<td>{{dis["age"]}}</td>
+				<td><button><a href="{{url_for('edit', id=dis['id'])}}">Edit</a></button></td>
+				<td><button><a href="{{url_for('delete', id=dis['id'])}}">Delete</a></button></td>
+			</tr>
+			{% endfor %}
+		</tbody>
+	</table>
+	
+</body>
+</html>

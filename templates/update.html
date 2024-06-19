@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Edit Form</title>
+</head>
+<body>
+	<h1>Edit Data</h1>
+	<form method="POST" action="">
+		<div>
+			<label>Firstname: </label>
+			<input type="text" name="fname" placeholder="Input Firstname" value="{{data['firstname']}}"><br>
+		</div>
+		<br>
+		<div>
+			<label>Lastname: </label>
+			<input type="text" name="lname" placeholder="Input lastname" value="{{data['lastname']}}">
+		</div>
+		<br>
+		<div>
+			<label>Age: </label>
+			<input type="text" name="age" placeholder="Input Age" value="{{data['age']}}">
+		</div>
+		<br>
+			<input type="submit">
+	</form>
+</body>
+</html>
